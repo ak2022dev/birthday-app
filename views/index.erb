@@ -1,3 +1,4 @@
+<!-- in index.erb -->
 <html>
   <head>
     <style type="text/css">
@@ -12,7 +13,7 @@
     </style>
   </head>
   <h1>Hello there!</h1>
-  <form name="birthday_form">
+  <form name="birthday_form" action="/output" method="post">
     <label>What's your name?</label>
     <p>
       <input type="text" id="user_name" name="user_name">
