@@ -1,8 +1,26 @@
 <html>
   <h1>Hello there!</h1>
-  <h2>What's your name?<h2>
-  <h2>When's your birthday?<h2>
-  <h3>Day:</h3>
-  <h3>Month:</h4>
+  <form name="birthday_form">
+    <label>What's your name?</label>
+    <p>
+      <input type="text" id="user_name" name="user_name">
+    </p>
+    <label>When's your birthday?</label>
+    <p>
+      <label>Day:</label>
+      <input type="text" id="day_of_month" name="day_of_month">
+      <label>Month:</label>
+<!-- tried this but didn't work
+      <datalist id="month">
+        <option value="January">
+        <option value="February">
+        <option value="March">
+      </datalist>
+-->
+      <input type="text" id="month" name="month">
+    </p>
+    <p>
+      <input type="submit" value="Go!">
+    </p>
+  </form>
 </html>
-
