@@ -1,2 +1,8 @@
 <!-- in output.erb -->
-<h1>Output!<h1>
+<% if @num_days == -1 %>
+  <h1>Sorry... there has been an error :( </h1>
+<% elsif @num_days == 0 %>
+  <h1>Happy Birthday, <%= @name %>!</h1>
+<% else %>
+  <h1><%= @name %>,  your birthday is in <%= @num_days %> days!</h1>
+<% end %>

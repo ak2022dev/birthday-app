@@ -13,6 +13,10 @@ def birth_date_counter( month_name, day )
   # convert and create new Date object
   month = Date::MONTHNAMES.index( month_name.strip )
   today = Date.today
+  if !(Date.valid_date?( today.year, month, (day.strip).to_i ))
+    # error condition
+    return -1
+  end
   birthday = Date.new( today.year, month, (day.strip).to_i )
   if (today <=> birthday) == 0
     # today is birthday
